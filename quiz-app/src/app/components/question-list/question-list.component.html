@@ -1,0 +1,17 @@
+<p>Enter the Question to Search</p>
+
+<input [(ngModel)]="criterion"/>
+
+
+
+<button (click)="search()"><label>Search</label></button>
+
+
+<div *ngFor="let question of questionList">
+   
+      <p>Displaying Saved Question </p>
+         <p>{{ question.questionContent }}</p>
+         <button (click)="delete()"><label>Delete</label></button>     
+         <button (click)="update()"><label>update</label></button>     
+            
+</div>
